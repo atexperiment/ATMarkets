@@ -179,9 +179,13 @@ There will be two overconfidence measurements.
 Subjects are asked after the Holt and Laury task to guess the average switching
  point (from lottery A to lottery B) of other participants in the group.
  Subjects are incentivised for the precision of their guess.
- After response they are asked to indicate the 
+ After response they are asked to indicate the
 \emph on
-error margin 
+ 
+\emph default
+error margin
+\emph on
+ 
 \emph default
 of their guess
 \emph on
@@ -201,7 +205,8 @@ Trading
 \end_layout
 
 \begin_layout Standard
-bkabsd
+Per subject we measure the number of buying and selling actions that were
+ made in every period.
 \end_layout
 
 \begin_layout Subsection
@@ -211,6 +216,8 @@ Outside option
 \begin_layout Standard
 At the begining of each round subjects can push a button that will lock
  the screen for the next round, disenabling trade for that period.
+ Chosing the outside option will automatically set the number of buying
+ and selling actions to zero.
 \end_layout
 
 \begin_layout Section

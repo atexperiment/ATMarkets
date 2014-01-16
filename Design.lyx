@@ -1,0 +1,253 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+The effect of algorithmic trading in asset markets on human willingness
+ to trade (Handout)
+\end_layout
+
+\begin_layout Author
+Mike Farjam
+\end_layout
+
+\begin_layout Section
+Research Question
+\end_layout
+
+\begin_layout Subsection
+Main
+\end_layout
+
+\begin_layout Standard
+Does the presence of 
+\emph on
+algorithmic traders
+\emph default
+ (AT) in an asset market lower the willingness of subjects to trade in the
+ market?
+\end_layout
+
+\begin_layout Subsection
+Minor
+\end_layout
+
+\begin_layout Standard
+Do the people that deliberetly trade in asset markets with algorithmic trading
+ differ from people that deliberetly trade in markets with only human participan
+t?
+\end_layout
+
+\begin_layout Enumerate
+Differ with respect to their 
+\emph on
+risk preference
+\end_layout
+
+\begin_layout Enumerate
+Differ with respect to their 
+\emph on
+overconfidence
+\end_layout
+
+\begin_layout Section
+Expectations
+\end_layout
+
+\begin_layout Standard
+I expact that more subjects will refuse to trade/trade less in markets with
+ AT, than in markets without AT.
+ Those that still chose to trade in markets with AT are on average less
+ risk averse and more overconfident than the average subject that choses
+ to trade in markets without AT.
+\end_layout
+
+\begin_layout Section
+Markets
+\end_layout
+
+\begin_layout Subsection
+Baseline condition
+\end_layout
+
+\begin_layout Standard
+Based on Smith, Suchanek, and Williams (1988).
+ Subjects trade assets that pay a random dividend {0, 8, 28, 60} per round
+ and can trade those assets in an continous double auction.
+ 15 rounds are played, so the fundamental value per asset at the beginning
+ of the simulation is 15 x mean (0, 8, 28, 60) = 360 units.
+ Subjects start with 720 units cash which they can use to buy assets sold
+ buy other participants.
+ Short-selling is not allowed.
+ Each period takes 3 minutes.
+\end_layout
+
+\begin_layout Subsection
+Experimental condition
+\end_layout
+
+\begin_layout Standard
+Starting with a random draw.
+ With probability 0.5 subjects end up (during the entire experiment) in a
+ market that is identical to the baseline market.
+ With the same probability subjects end up in a market in which there is
+ AT.
+ Subjects are informed about the probability, but not about the result of
+ the random draw.
+ Hence subjects are uncertain whether they will trade with AT in this condition.
+\end_layout
+
+\begin_layout Section
+Measurements
+\end_layout
+
+\begin_layout Subsection
+Risk preference
+\end_layout
+
+\begin_layout Standard
+Before the market simulation we measure subjects risk preference as proposed
+ by Holt and Laury (2002).
+\end_layout
+
+\begin_layout Subsection
+Overconfidence
+\end_layout
+
+\begin_layout Standard
+There will be two overconfidence measurements.
+\end_layout
+
+\begin_layout Enumerate
+Subjects are asked after the Holt and Laury task to guess the average switching
+ point (from lottery A to lottery B) of other participants in the group.
+ Subjects are incentivised for the precision of their guess.
+ After response they are asked to indicate the 
+\emph on
+error margin 
+\emph default
+of their guess
+\emph on
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Subjects are asked to answer 7 riddles (30 seconds time for answer per riddle)
+ taken from Bruguier et al.
+ (2010) and incentivised for correct answers.
+ After the riddles they are asked
+\end_layout
+
+\begin_layout Subsection
+Trading
+\end_layout
+
+\begin_layout Standard
+bkabsd
+\end_layout
+
+\begin_layout Subsection
+Outside option
+\end_layout
+
+\begin_layout Standard
+At the begining of each round subjects can push a button that will lock
+ the screen for the next round, disenabling trade for that period.
+\end_layout
+
+\begin_layout Section
+Variables and operationalizations
+\end_layout
+
+\begin_layout Subsection
+Dependend variables
+\end_layout
+
+\begin_layout Enumerate
+Number of subjects locking the screen per period.
+\end_layout
+
+\begin_layout Enumerate
+Number of trades per subject.
+\end_layout
+
+\begin_layout Subsection
+Independend variables
+\end_layout
+
+\begin_layout Enumerate
+Potential presence of algorithmic trading
+\end_layout
+
+\begin_layout Enumerate
+Risk preference
+\end_layout
+
+\begin_layout Enumerate
+Overconfidence
+\end_layout
+
+\begin_layout Section
+Pay-off structure
+\end_layout
+
+\end_body
+\end_document

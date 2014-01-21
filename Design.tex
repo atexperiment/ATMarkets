@@ -1,0 +1,167 @@
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{babel}
+\begin{document}
+
+\title{The effect of algorithmic trading in asset markets on human willingness
+to trade (Handout)}
+
+
+\author{Mike Farjam}
+
+\maketitle
+
+\section{Research Question}
+
+
+\subsection{Main}
+
+Does the presence of \emph{algorithmic traders} (AT) in an asset market
+lower the willingness of subjects to trade in the market?
+
+
+\subsection{Minor}
+
+Do people that deliberately trade asset markets with algorithmic trading
+differ from people that deliberately trade in markets with only human
+participant?
+\begin{enumerate}
+\item Differ with respect to their \emph{risk preference}
+\item Differ with respect to their \emph{overconfidence}
+\end{enumerate}
+
+\section{Expectations}
+
+We expect that more subjects will refuse to trade/trade less in markets
+with AT, than in markets without AT. Those that still chose to trade
+in markets with AT are on average less risk averse and more overconfident
+than average subjects that chose to trade in markets without AT.
+
+
+\section{Markets}
+
+
+\subsection{Baseline condition}
+
+Based on Smith, Nonesuch, and Williams (1988). Subjects trade assets
+that pay a random dividend \{0, 8, 28, 60\} per round and can trade
+those assets in an continuous double auction. 15 rounds are played,
+so the fundamental value per asset at the beginning of the simulation
+is 15 {*} mean(0, 8, 28, 60) = 360 units and decreasing by mean(0,
+8, 28, 60) with every round. Subjects start with 720 units cash which
+they can use to buy assets sold buy other participants. Short-selling
+is not allowed. Each period takes 3 minutes.
+
+
+\subsection{Experimental condition}
+
+Starting with a random draw. With probability 0.5 subjects end up
+(during the entire experiment) in a market that is identical to the
+baseline market. With the same probability subjects end up in a market
+in which there is AT. Subjects are informed about the probability,
+but not about the result of the random draw. Hence subjects are uncertain
+if they will trade with AT in this condition. After the simulation
+subjects are asked whether they believe that AT were in the market.
+
+
+\section{Algorithmic Traders}
+
+After the baseline condition subjects will be asked to imagine how
+algorithmic traders (AT) would trade in such a market and to write
+down at most 3 adjectives with which they would describe those AT.
+These adjectives will be used in the experimental condition to describe
+to subjects how the AT are programmed%
+\footnote{Of course we program the AT in such a way that it can be described
+by the adjectives%
+}. This way of introducing AT is chosen because by describing AT we
+control for believes of subjects about AT. At the same time we do
+not change the average subjects' believes about AT (assuming equal
+believes about AT in the conditions because of randomization).
+
+In the baseline condition we will measure the time that it took for
+a contract to get from the status ``offered'' to ``sold''. AT
+in the experimental condition will not react immediately to offers
+made by other market participants. Instead they wait with considering
+offers made on the market with a delay that is equal to the average
+time that conclusion of a contract took in the baseline condition.
+We chose this action to make it not too obvious for subjects whether
+they are in an market wit AT. Subjects are informed on the latency
+of AT.
+
+
+\section{Measurements}
+
+
+\subsection{Risk preference}
+
+Before the market simulation we measure subjects risk preference as
+proposed by Holt and Laury (2002).
+
+
+\subsection{Overconfidence}
+
+There will be two overconfidence measurements.
+\begin{enumerate}
+\item Subjects are asked after the Holt and Laury task to guess the average
+switching point (from lottery A to lottery B) of other participants
+in the group. Subjects are incentivised for the precision of their
+guess. After response they are asked to indicate the confidence that
+their guess is correct\emph{. }
+\item Subjects answer 7 riddles (30 seconds time for answer per riddle)
+taken from Bruguier et al. (2010) and are incentivised for correct
+answers. After the riddles they are asked how many of the questions
+they think they answered correctly and asked to indicate the confidence
+that their guess is correct.
+\end{enumerate}
+
+\subsection{Trading}
+
+Per subject we measure the number of buying and selling actions that
+were made in every period.
+
+
+\subsection{Outside option}
+
+At the beginning of each round subjects can push a button that will
+lock the screen for the next round, disenabling trade for that period.
+Choosing the outside option will automatically set the number of buying
+and selling actions to zero.%
+\footnote{In the instructions we emphasize that both options, trading and the
+outside option, may be chosen equivalently, are adequate actions and
+that the subject should chose what he/she prefers.%
+}
+
+
+\section{Variables and operationalizations}
+
+
+\subsection{Dependend variables}
+\begin{enumerate}
+\item Number of subjects locking the screen per period.
+\item Number of trades per subject.
+\end{enumerate}
+
+\subsection{Independend variables}
+\begin{enumerate}
+\item Potential presence of algorithmic trading
+\item Risk preference
+\item Overconfidence
+\end{enumerate}
+
+\section{Pay-off structure}
+\begin{enumerate}
+\item Assuming risk neutrality and rationality subjects earn in the \emph{Holt
+and Laury lottery} on average: 5.175 Euro
+\item If subjects\emph{ guess the average switching point} for the Holt
+and Laury task correctly they get 1 Euro extra.
+\item Per \emph{riddle} subjects can earn 50 cent for the correct answer.
+So ideally subjects earn 3.5 Euro for all riddles.
+\item If subjects \emph{guess the number of correct answers} for the riddle
+task correctly they get 1 Euro extra.
+\item On average every subjects can earn during the \emph{market simulation}:\linebreak{}
+$initialCash+initialShares*rounds*averageDividend=2160$ ECU\end{enumerate}
+
+\end{document}

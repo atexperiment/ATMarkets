@@ -90,9 +90,9 @@ Minor
 \end_layout
 
 \begin_layout Standard
-Do the people that deliberetly trade in asset markets with algorithmic trading
- differ from people that deliberetly trade in markets with only human participan
-t?
+Do people that deliberately trade asset markets with algorithmic trading
+ differ from people that deliberately trade in markets with only human participa
+nt?
 \end_layout
 
 \begin_layout Enumerate
@@ -112,11 +112,11 @@ Expectations
 \end_layout
 
 \begin_layout Standard
-I expact that more subjects will refuse to trade/trade less in markets with
- AT, than in markets without AT.
+We expect that more subjects will refuse to trade/trade less in markets
+ with AT, than in markets without AT.
  Those that still chose to trade in markets with AT are on average less
- risk averse and more overconfident than the average subject that choses
- to trade in markets without AT.
+ risk averse and more overconfident than average subjects that chose to
+ trade in markets without AT.
 \end_layout
 
 \begin_layout Section
@@ -128,11 +128,12 @@ Baseline condition
 \end_layout
 
 \begin_layout Standard
-Based on Smith, Suchanek, and Williams (1988).
+Based on Smith, Nonesuch, and Williams (1988).
  Subjects trade assets that pay a random dividend {0, 8, 28, 60} per round
- and can trade those assets in an continous double auction.
+ and can trade those assets in an continuous double auction.
  15 rounds are played, so the fundamental value per asset at the beginning
- of the simulation is 15 x mean (0, 8, 28, 60) = 360 units.
+ of the simulation is 15 * mean(0, 8, 28, 60) = 360 units and decreasing
+ by mean(0, 8, 28, 60) with every round.
  Subjects start with 720 units cash which they can use to buy assets sold
  buy other participants.
  Short-selling is not allowed.
@@ -151,7 +152,66 @@ Starting with a random draw.
  AT.
  Subjects are informed about the probability, but not about the result of
  the random draw.
- Hence subjects are uncertain whether they will trade with AT in this condition.
+ Hence subjects are uncertain if they will trade with AT in this condition.
+ After the simulation subjects are asked whether they believe that AT were
+ in the market.
+\end_layout
+
+\begin_layout Section
+Algorithmic Traders
+\end_layout
+
+\begin_layout Standard
+After the baseline condition subjects will be asked to imagine how algorithmic
+ traders (AT) would trade in such a market and to write down at most 3 adjective
+s with which they would describe those AT.
+ These adjectives will be used in the experimental condition to describe
+ to subjects how the AT are programmed
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Of course we program the AT in such a way that it can be described by the
+ adjectives
+\end_layout
+
+\end_inset
+
+.
+ This way of introducing AT is chosen because by describing AT we control
+ for believes of subjects about AT.
+ At the same time we do not change the average subjects' believes about
+ AT (assuming equal believes about AT in the conditions because of randomization
+).
+\end_layout
+
+\begin_layout Standard
+In the baseline condition we will measure the time that it took for a contract
+ to get from the status 
+\begin_inset Quotes eld
+\end_inset
+
+offered
+\begin_inset Quotes erd
+\end_inset
+
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+sold
+\begin_inset Quotes erd
+\end_inset
+
+.
+ AT in the experimental condition will not react immediately to offers made
+ by other market participants.
+ Instead they wait with considering offers made on the market with a delay
+ that is equal to the average time that conclusion of a contract took in
+ the baseline condition.
+ We chose this action to make it not too obvious for subjects whether they
+ are in an market wit AT.
+ Subjects are informed on the latency of AT.
 \end_layout
 
 \begin_layout Section
@@ -179,15 +239,8 @@ There will be two overconfidence measurements.
 Subjects are asked after the Holt and Laury task to guess the average switching
  point (from lottery A to lottery B) of other participants in the group.
  Subjects are incentivised for the precision of their guess.
- After response they are asked to indicate the
-\emph on
- 
-\emph default
-error margin
-\emph on
- 
-\emph default
-of their guess
+ After response they are asked to indicate the confidence that their guess
+ is correct
 \emph on
 .
  
@@ -197,7 +250,9 @@ of their guess
 Subjects are asked to answer 7 riddles (30 seconds time for answer per riddle)
  taken from Bruguier et al.
  (2010) and incentivised for correct answers.
- After the riddles they are asked
+ After the riddles they are asked how many of the questions they think they
+ answered correctly and asked to indicate the confidence that their guess
+ is correct.
 \end_layout
 
 \begin_layout Subsection
@@ -214,10 +269,22 @@ Outside option
 \end_layout
 
 \begin_layout Standard
-At the begining of each round subjects can push a button that will lock
+At the beginning of each round subjects can push a button that will lock
  the screen for the next round, disenabling trade for that period.
- Chosing the outside option will automatically set the number of buying
+ Choosing the outside option will automatically set the number of buying
  and selling actions to zero.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In the instructions we emphasize that both options, trading and the outside
+ option, may be chosen equivalently, are adequate actions and that the subject
+ should chose what he/she prefers.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -256,8 +323,53 @@ Overconfidence
 Pay-off structure
 \end_layout
 
-\begin_layout Standard
-Formula showing all payoffs ane average payoff
+\begin_layout Enumerate
+Assuming risk neutrality and rationality subjects earn in the 
+\emph on
+Holt and Laury lottery
+\emph default
+ on average: 5.175 Euro
+\end_layout
+
+\begin_layout Enumerate
+If subjects
+\emph on
+ guess the average switching point
+\emph default
+ for the Holt and Laury task correctly they get 1 Euro extra.
+\end_layout
+
+\begin_layout Enumerate
+Per 
+\emph on
+riddle
+\emph default
+ subjects can earn 50 cent for the correct answer.
+ So ideally subjects earn 3.5 Euro for all riddles.
+\end_layout
+
+\begin_layout Enumerate
+If subjects 
+\emph on
+guess the number of correct answers
+\emph default
+ for the riddle task correctly they get 1 Euro extra.
+\end_layout
+
+\begin_layout Enumerate
+On average every subjects can earn during the 
+\emph on
+market simulation
+\emph default
+:
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Formula $initialCash+initialShares*rounds*averageDividend=2160$
+\end_inset
+
+ ECU
 \end_layout
 
 \end_body

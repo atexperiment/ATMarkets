@@ -461,20 +461,21 @@ As suggested by the name this condition starts with a random draw about
  which subjects are informed.
  With a 50% chance subjects will participate in a market where algorithmic
  traders are active.
- We will refer to this as the Random-draw Hybrid (RH) Market.
+ We will refer to this as the random-draw AT (RAT) condition.
  With a 50% chance subjects participate in a market that is identical to
- the baseline market (RB).
+ the baseline market.
+ This will be called random-draw human (RH) condition.
  Subjects are not informed on the result of the random draw.
- In all other aspects RB and RH are identical to baseline markets.
- RB and baseline markets thus only differ with respect to the believe of
+ In all other aspects RAT and RH are identical to baseline markets.
+ RH and baseline markets thus only differ with respect to the believe of
  subjects that there could be AT in the market.
- (In the result section we will compare RB with baseline markets to study
+ (In the result section we will compare RAT with baseline markets to study
  the effect that the believe that AT is in the market has, keeping all other
  variables constant.)
 \end_layout
 
 \begin_layout Standard
-In RB and RH subjects get information on the algorithmic traders they may
+In RAT and RH subjects get information on the algorithmic traders they may
  interact with.
  Giving this information comes as a double-edged sword.
  On the one hand, it is crucial to keep experimental control about the believes
@@ -483,18 +484,10 @@ In RB and RH subjects get information on the algorithmic traders they may
  in such a way that we induce an experimental demand that subjects behave
  the way we expect them to in our hypotheses.
  We therefore chose to collect and aggregate the believes of subjects in
- the baseline condition and present them to subjects in RB and RH as the
+ the baseline condition and present them to subjects in RAT and RH as the
  way that AT is implemented in the markets they will trade in.
- Assuming that the believes about AT in the baseline and RB and RH are the
- same, we do not change their believes, but still control them.
-\end_layout
-
-\begin_layout Standard
-Markets with males are known to produce bigger bubbles (Reference).
- Furthermore, women are more risk averse (Reference).
- We therefore matched groups with respect to gender of market participants.
- Candidates that have participated in experimental asset markets were excluded
- from the experiment.
+ Assuming that the believes about AT in the baseline and RAT and RH are
+ the same, we do not change their believes, but still control them.
 \end_layout
 
 \begin_layout Subsection

@@ -3,9 +3,12 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\date{}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language ngerman
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -25,6 +28,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -46,7 +50,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language german
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -63,23 +67,15 @@
 Instruktionen (baseline market)
 \end_layout
 
-\begin_layout Standard
-Vielen Dank für Ihre Teilnahme an einer wirtschaftswissenschaftlichen Studie,
- bei der Sie die Möglichkeit haben, Geld zu verdienen.
- Wir bitten Sie, von nun an nicht mehr miteinander zu kommunizieren.
- Wenn Sie eine Frage haben, heben Sie bitte die Hand und der Instruktor
- wird zu Ihnen kommen.
-\end_layout
-
 \begin_layout Section
 Marktsimulation
 \end_layout
 
 \begin_layout Standard
-In den folgenden ca.
- 50 min werden Sie an einer Marktsimulation teilnehmen.
- Die Regeln sind für alle Teilnehmer die gleichen.
- Ihre Entlohnung ist abhängig von den Entscheidungen die Sie während der
+In den nächsten ca.
+ 90 min werden Sie an einer Marktsimulation teilnehmen.
+ Die Regeln sind für alle Teilnehmer gleich.
+ Ihre Entlohnung ist abhängig von den Entscheidungen, die Sie während der
  Simulation treffen.
 \end_layout
 
@@ -94,31 +90,27 @@ Die Marktsimulation besteht aus 15 Runden, wobei jede Runde genau 3 Minuten
 \begin_layout Standard
 Jeder Spieler startet die erste Runde mit einem Geldkapital von 720 ECU
  und 4 Aktien.
- Während jeder Runde können Sie Aktien zum Verkauf anbieten oder Aktien
- kaufen.
- Am Ende jeder Runde erhalten sie pro Aktie eine Dividende ausgezahlt.
- 
-\end_layout
-
-\begin_layout Standard
-Die Dividende wird am Ende der Runde zum Geldkapital hinzugefügt.
+ Während jeder Runde können Sie Aktien zum Verkauf anbieten oder kaufen.
  Wenn Sie Aktien zu einem Preis kaufen, dann wird dieser Preis von Ihrem
  Geldkapital abgezogen.
- Wenn Sie eine Aktie verkaufen wird der erzielte Preis zu Ihrem Geldkapital
- hinzugefügt.
+ Wenn Sie eine Aktie verkaufen, wird der Preis zu Ihrem Geldkapital hinzugefügt.
  Sie können zu keinem Zeitpunkt mehr Geld für eine Aktie bezahlen als Sie
  Geldkapital haben.
- Es ist auch nicht möglich eine Aktie zum Verkauf anzubieten wenn Sie keine
+ Es ist auch nicht möglich eine Aktie zum Verkauf anzubieten, wenn Sie keine
  Aktie besitzen.
 \end_layout
 
 \begin_layout Standard
-Vier verschiedene Dividenden sind pro Aktie pro Runde möglich: 0, 8, 28
- und 60 ECU.
- Jede Dividende ist gleich wahrscheinlich.
- Die durchschnittliche Dividende ist 24 ECU.
- Wenn Sie eine Aktie 7 Runden vor Schluss kaufen, bekommen Sie durchschnittlich
- eine Dividende von 7*24 = 168 ECU.
+Am Ende jeder Runde erhalten sie pro Aktie zusätzliches Geldkapital.
+ Wie viel Geldkapital Sie für Ihre Aktien am Ende der Runde erhalten, wird
+ vom Computer zufällig entschieden.
+ Möglich sind 0, 8, 28 und 60 ECU pro Aktie.
+ Jede Möglichkeit ist gleich wahrscheinlich und gilt für alle Ihre Aktien
+ in dieser Runde.
+ Durchschnittlich erhalten Sie 24 ECU pro Runde pro Aktie.
+ Wenn Sie z.B.
+ eine Aktie 7 Runden vor Schluss kaufen und nicht mehr verkaufen, bekommen
+ Sie durchschnittlich 7*24 = 168 ECU für die Aktie.
  Zur besseren Übersicht finden Sie auf der letzten Seite der Instruktionen
  eine Tabelle die den durchschnittlichen Wert einer Aktie in jeder Runde
  zeigt.
@@ -127,38 +119,37 @@ t in Euro.
 \end_layout
 
 \begin_layout Section
-Computerprogram
+Computerprogramm
 \end_layout
 
 \begin_layout Standard
-Die Marktsimulation findet mit hilfe des Computers statt.
- Im Folgenden werden die einzelnen Funktionen des Programmes erklärt.
- Sie werden gebeten einzelne Aktionen auszuführen.
+Die Marktsimulation findet mit Hilfe eines Computerprogramms statt.
+ Wir erklären jetzt die einzelnen Funktionen des Programms.
+ Sie werden gebeten Aktionen zur Probe auszuführen.
  Diese Aktionen gehören noch nicht zur Marktsimulation und haben keinen
  Einfluss auf ihre Entlohnung.
 \end_layout
 
 \begin_layout Standard
-In der Ecke links oben sehen Sie das Geldkapital welches Ihnen zur Verfügung
- steht.
- Darunter sehen Sie wieviele Aktien derzeit in Ihrem Besitz sind.
+Im oberen Teil des Bildschirmes sehen Sie das Geldkapital (720) das Ihnen
+ zur Verfügung steht, rechts daneben wie viele Aktien (4) Sie besitzen.
 \end_layout
 
 \begin_layout Standard
-Daneben befindet sich eine Spalte mit der Überschrift 
-\begin_inset Quotes eld
+In der Spalte ganz links befindet sich ein Eingabefeld über dem 
+\begin_inset Quotes gld
 \end_inset
 
-Preis für den ich verkaufe
+Preis zu dem ich verkaufe
 \begin_inset Quotes erd
 \end_inset
 
-.
+ steht.
  In dem Eingabefeld können Sie einen Preis eingeben zu dem Sie eine Aktie
  verkaufen wollen.
  Dieses Angebot wird erst an die anderen Spieler geschickt wenn Sie auf
- das rote Feld 
-\begin_inset Quotes eld
+ das rote Feld unten 
+\begin_inset Quotes gld
 \end_inset
 
 Aktie anbieten
@@ -166,48 +157,54 @@ Aktie anbieten
 \end_inset
 
  klicken.
- Bitte geben Sie jetzt einen Betrag von weniger als 720 ECU ein und klicken
- Sie auf 
-\begin_inset Quotes eld
+ 
+\emph on
+Geben Sie nun eine Zahl von maximal 720 ein und klicken Sie auf 
+\begin_inset Quotes gld
 \end_inset
 
 Aktie anbieten
 \begin_inset Quotes erd
 \end_inset
 
+
+\emph default
 .
 \end_layout
 
 \begin_layout Standard
-Sie sehen nun 
+Sie sehen nun ebenso viele
 \emph on
-X 
+ 
 \emph default
-Zahlen in der Spalte rechts (
-\begin_inset Quotes eld
+Zahlen in der Spalte rechts daneben (
+\begin_inset Quotes gld
 \end_inset
 
 Angebotene Aktien
 \begin_inset Quotes erd
 \end_inset
 
-).
- Dies sind alle Aktien die von Spielern zu einem Preis angeboten wurden.
- Die Preise sind immer in aufsteigender Reihenfolge von Unten nach Oben
- sortiert.
- Der niedrigste Preis wird farblich hervorgehoben.
- Durch klicken auf einen anderen Preis wird dieser farblich hervorgehoben
- und ausgewählt.
- Druch klicken auf das Feld 
-\begin_inset Quotes eld
+) wie es Teilnehmer an der Marktsimulation gibt.
+ Dies sind alle Aktien, die Spieler zu einem entsprechenden Preis anbieten.
+ Die Preise sind in aufsteigender Reihenfolge von Unten nach Oben sortiert.
+ Durch klicken auf einen Preis wird dieser farblich hervorgehoben und ausgewählt.
+ Durch klicken auf das Feld 
+\begin_inset Quotes gld
 \end_inset
 
 Kaufen
 \begin_inset Quotes erd
 \end_inset
 
- kaufen Sie die Aktie die ausgewählt, also farblich hervorgehoben ist.
- Bitte kaufen Sie nun eine Aktie.
+ kaufen Sie die farblich hervorgehobene Aktie zu dem entsprechenden Preis.
+ Ihr eigenes Angebot steht in blauer Schrift.
+ Dieses Aktie können Sie nicht kaufen.
+ 
+\emph on
+Bitte kaufen Sie nun eine Aktie
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -221,7 +218,7 @@ In der ganz rechten Spalte können Sie ein Angebot machen, zu dem andere
  Hierzu geben Sie einen Preis ein, der maximal Ihrem Geldkapital entspricht.
  Dieser Preis wird erst an die anderen Spieler geschickt wenn Sie auf das
  rote Feld 
-\begin_inset Quotes eld
+\begin_inset Quotes gld
 \end_inset
 
 Preis bieten
@@ -229,8 +226,10 @@ Preis bieten
 \end_inset
 
  klicken.
- Bitte geben Sie jetzt einen Betrag ein und klicken Sie auf das 
-\begin_inset Quotes eld
+ 
+\emph on
+Geben Sie nun einen Betrag ein und klicken Sie auf das rote Feld 
+\begin_inset Quotes gld
 \end_inset
 
 Preis bieten
@@ -241,49 +240,68 @@ Preis bieten
 \end_layout
 
 \begin_layout Standard
-Sie sehen nun 
+Sie sehen nun ebenso viele
 \emph on
-X 
+ 
 \emph default
 Zahlen in der Spalte links (
-\begin_inset Quotes eld
+\begin_inset Quotes gld
 \end_inset
 
 Gebotene Preise
 \begin_inset Quotes erd
 \end_inset
 
-).
- Dies sind alle Preise die von Spielern für eine Aktie geboten wurden.
- Die Preise sind immer in aufsteigender Reihenfolge von Unten nach Oben
- sortiert.
- Der niedrigste Preis wird farblich hervorgehoben.
- Durch klicken auf einen anderen Preis wird dieser farblich hervorgehoben
- und ausgewählt.
- Druch klicken auf das Feld 
-\begin_inset Quotes eld
+) wie es Teilnehmer in der Marktsimulation gibt.
+ Dies sind Preise die Spieler für eine Aktie bieten.
+ Die Preise sind in aufsteigender Reihenfolge von Unten nach Oben sortiert.
+ Durch klicken auf einen Preis wird dieser farblich hervorgehoben und ausgewählt.
+ Durch klicken auf das Feld 
+\begin_inset Quotes gld
 \end_inset
 
 Verkaufen
 \begin_inset Quotes erd
 \end_inset
 
- verkaufen Sie eine Ihrer Aktien für den ausgewählten Preis.
- Bitte wählen Sie einen Preis und verkaufen Sie eine Aktie.
+ verkaufen Sie eine Ihrer Aktien für den ausgewählten Preis an den Spieler
+ der das Angebot gemacht hat.
+ 
+\emph on
+Bitte wählen Sie nun einen Preis und verkaufen Sie eine Aktie.
 \end_layout
 
 \begin_layout Standard
-In der mittleren Spalte werden alle bisherigen Preise Aktien Verkäufe und
- ihr entsprechender Preis gelistet.
- Der letzte Handel steht oben, ältere Weiteren darunter.
+In der mittleren Spalte werden alle bisherigen Aktien Verkäufe mit ihren
+ dazugehörigen Preisen gelistet.
+ Der erste Handel steht oben, der Letzte unten.
 \end_layout
 
 \begin_layout Standard
 Sie werden nun gemeinsam eine Übungsrunde haben.
  Diese Übungsrunde ist in Dauer und Art genauso wie die späteren Runden
  in der echten Marktsimulation.
- Diese Übungsrunde hat KEINE Auswirkungen auf die Marktsimulation, Ihre
- Entlohnung, wird nicht gespeichert oder bewertet.
+ Diese Übungsrunde hat KEINE Auswirkungen auf die Marktsimulation oder Ihre
+ Entlohnung und wird nicht gespeichert oder bewertet.
+\end_layout
+
+\begin_layout Section
+Nichtteilnehmen
+\end_layout
+
+\begin_layout Standard
+Zu Beginn jeder Periode werden Sie gefragt, ob Sie an der nächsten Runde
+ teilnehmen wollen.
+ Antworten Sie mit Nein, können Sie weder kaufen oder verkaufen, noch sehen
+ wie Aktien gehandelt werden.
+ Ihre Entscheidung beeinflusst nicht, wie viel Sie am Ende der Runde pro
+ Aktie ausgezahlt bekommen.
+ Entscheiden Sie sich für die Teilnahme an einer Runde und haben am Ende
+ der Runde 1 Aktie, dann ist bringt diese Aktie durchschnittlich genauso
+ viel ein, wie wenn Sie 1 Aktie zu Beginn der Runde haben und entscheiden
+ nicht an der Runde teilzunehmen.
+ Weder eine Teilnahme noch ein Nichtteilnahme ist besser für Ihre Entlohnung.
+ Die Entscheidung steht Ihnen völlig frei.
 \end_layout
 
 \begin_layout Standard
@@ -293,18 +311,31 @@ Sie werden nun gemeinsam eine Übungsrunde haben.
 
 \end_layout
 
-\begin_layout Paragraph
-Tabelle mit zu erwartenden Dividenden in jeder Runde:
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Zu erwartende Einnahmen pro Aktie in Ihrem Besitz
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
 \begin_inset Tabular
-<lyxtabular version="3" rows="16" columns="4">
+<lyxtabular version="3" rows="16" columns="6">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2.8cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="2.8cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="2.8cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -315,29 +346,47 @@ Aktuelle Runde
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Verbleibende Auszahlungen
+Restliche Auszahlungen bis Ende der Simulation
 \end_layout
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none" width="3cm">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Durchschnittliche Dividende
+*
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Durchschnittliche Dividende bis Ende der Simulation
+Durchschnittliche Auszahlung pro Aktie pro Runde (In ECU)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Durchschnittliche Auszahlung pro Aktie bis Ende der Simulation (In ECU)
 \end_layout
 
 \end_inset
@@ -353,7 +402,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -362,7 +411,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -371,7 +429,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -391,7 +458,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -400,7 +467,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -409,7 +485,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -429,7 +514,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -438,7 +523,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -447,7 +541,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -467,7 +570,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -476,7 +579,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -485,7 +597,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -505,7 +626,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -514,7 +635,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -523,7 +653,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -543,7 +682,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -552,7 +691,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -561,7 +709,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -581,7 +738,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -590,7 +747,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -599,7 +765,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -619,7 +794,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -628,7 +803,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -637,7 +821,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -657,7 +850,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -666,7 +859,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -675,7 +877,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -695,7 +906,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -704,7 +915,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -713,7 +933,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -733,7 +962,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -742,7 +971,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -751,7 +989,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -771,7 +1018,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -780,7 +1027,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -789,7 +1045,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -809,7 +1074,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -818,7 +1083,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -827,7 +1101,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -847,7 +1130,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -856,7 +1139,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -865,7 +1157,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -885,7 +1186,7 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -894,7 +1195,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -903,7 +1213,16 @@ Durchschnittliche Dividende bis Ende der Simulation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -914,6 +1233,15 @@ Durchschnittliche Dividende bis Ende der Simulation
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 

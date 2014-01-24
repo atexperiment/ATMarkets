@@ -90,7 +90,7 @@ Minor
 \end_layout
 
 \begin_layout Standard
-Do people that deliberately trade asset markets with algorithmic trading
+Do people that deliberately trade in asset markets with algorithmic trading
  differ from people that deliberately trade in markets with only human participa
 nt?
 \end_layout
@@ -130,11 +130,11 @@ Baseline condition
 \begin_layout Standard
 Based on Smith, Nonesuch, and Williams (1988).
  Subjects trade assets that pay a random dividend {0, 8, 28, 60} per round
- and can trade those assets in an continuous double auction.
+ and can trade those assets in a continuous double auction.
  15 rounds are played, so the fundamental value per asset at the beginning
  of the simulation is 15 * mean(0, 8, 28, 60) = 360 units and decreasing
  by mean(0, 8, 28, 60) with every round.
- Subjects start with 720 units cash which they can use to buy assets sold
+ Subjects start with 720 ECU cash which they can use to buy assets sold
  buy other participants.
  Short-selling is not allowed.
  Each period takes 3 minutes.
@@ -320,7 +320,7 @@ Overconfidence
 \end_layout
 
 \begin_layout Section
-Pay-off structure
+Payment
 \end_layout
 
 \begin_layout Enumerate

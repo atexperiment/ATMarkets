@@ -1,0 +1,356 @@
+%% LyX 2.0.5.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english,doc]{apa}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{graphicx}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\helvetica
+\author{Author} % hack around some bugs in apa.cls
+\affiliation{Affiliation} % hack around some bugs in apa.cls
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+%% uncomment the following line to get this information
+% below the tile
+%\note{Draft of \today}
+
+%% Some information on the journal. This will be
+%% printed on the headline of the first page
+%% Just uncomment wir a '%' if you don't want this
+% Journal name
+\journal{The Test Journal}
+% volume, number, pages
+\volume{Vol. 0 (2007), pp.~1--22}
+% copyright notice
+\ccoppy{\textcopyright\ The Author}
+% Serial number or other reference
+\copnum{ISSN XXX-XXXX-XXXX}
+
+%% The usual ...
+\acknowledgements{Author notes, acknowledgements, contact information go here \ldots}
+
+\note{This is a note}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{Changes in human behavior under the presence of algorithmic traders
+in experimental asset markets}
+
+
+\rightheader{Presence of algorithmic traders in asset markets}
+
+
+\author{Mike Daniel Farjam}
+
+
+\affiliation{Friedrich Schiller University Jena, International Max Planck Research
+School on Adapting Behavior in a Fundamentally Uncertain World, Germany}
+
+
+\abstract{bladibla}
+
+\maketitle
+In 1988, Smith, Suchanek, and Williams (SSW) published work in experimental
+asset markets that became canonical in experimental economics. In
+these markets assets that pay a random dividend are traded in an anonymized
+continuous double action. Subjects start with a stack of assets and
+some cash which they can use to buy assets that are available on the
+market. The average dividend that an asset pays and the time available
+for trading is known to subjects. Thus subjects (theoretically) know
+the fundamental value of an asset in these markets. SSW find that
+asset prices in the experimental markets follow a \textquotedblleft{}bubble
+and crash\textquotedblright{} pattern that is close to speculative
+bubbles in real world asset markets. Many modifications of the SSW
+design have been used to understand the reasons for market bubbles
+and design markets that are less probable to produce such bubbles
+(for a full survey see Palan (2013)). 
+
+The biggest change in real world asset markets since the 1980s is
+the still increasing use of automated \emph{algorithmic trading} with
+the help of computers. The use of computers in asset markets comes
+in many flavors. Starting with scheduling of sales for large amounts
+of assets without influencing the asset price on the market, but also
+including fully automated strategic algorithms that learn and replace
+human traders in the decision on what to sell and buy on the markets
+(Kirilenko and Lo, 2013). It is estimated that AT is responsible for
+up to 70\% of the total trading volume in major European and US equity
+exchanges (De Luca et al., 2011). 
+
+Despite this major change in real-world asset markets, it seems that
+experimental economists prefer to study (human-only) markets of the
+1980s to propose policies for the (hybrid human-computer) markets
+of the 21st century. A very small amount of studies have tried to
+study hybrid markets. The major part of these studies focuses on the
+computer side of hybrid markets. Das et al. (2001) and De Luca and
+Cliff (2011) did \textquotedblleft{}horse race\textquotedblright{}
+studies in which they compare the performance of different kinds of
+algorithms with the performance of humans. Other experiments try to
+identify properties in which hybrid markets differ from human-only
+markets. Walsh et al. (2013) find that liquidity improves in hybrid
+markets. Gsell (2008) shows with a simulation approach that AT leads
+to a higher volatility of the market. In an empirical analysis of
+the NYSE since 2003 Hendershott, Jones, and Menkveld (2011) find that
+liquidity increased on the market as the use of AT increased. Furthermore,
+they find an increase in speed of price discovery. 
+
+All of these studies ignore the possibility that differences between
+human-only and hybrid markets may not just be due to different properties
+of algorithmic compared to human traders, but may also be a result
+of the different expectations that humans have in hybrid markets with
+respect to participants in the market they may interact with (namely
+computers). 
+
+In this paper, we study empirically the changes in human market behavior
+when humans believe that there is AT in the market. To the best of
+our knowledge there is only one study with a comparable research question.
+Grossklags and Schmidt (2006) compare experimental asset markets in
+which humans trade in hybrid markets without knowing that AT is part
+of the market, with hybrid markets in which the presence of AT is
+common knowledge. Market prices convert closer to the equilibrium
+when the presence of AT is known and markets in which humans know
+about it are also more efficient. They find no significant difference
+in trading volume between the two markets (although the trend is that
+there is less trading when subjects are informed about the presence
+of AT). 
+
+Unfortunately Grossklags and Schmidts\textquoteright{} paper has,
+from an economic point of view, some weaknesses that we want to overcome.
+They do not give all payoff relevant information to subjects in the
+no-information condition (namely the presence of AT) and they do not
+control for the believes that subjects may have about AT. 
+
+While Grossklags and Schmidt focus on the aggregate level of the market
+in their analysis, we want to learn more about the subjects on an
+individual level. What kind of personalities chose to trade in hybrid
+markets? More precisely, what is their\emph{ risk preference} and
+level of \emph{overconfidence}? Is there a critical chance to interact
+with algorithmic traders in the market at which subjects prefer not-trading
+above trading in the hybrid market? In the following section we will
+review literature in standard (human-only) market experiments that
+is relevant for similar questions in hybrid markets and we derive
+hypotheses for our experiment from that literature. In the method
+section we describe the concrete design we chose to test the hypotheses. 
+
+
+\section{Relevant Literature}
+
+Cheung et al. (2012) report an experiment in which they trained all
+subjects in an asset market similar to the SSW market. Either subjects
+were informed after the training that all participants of the market
+were trained in the same way (experimental condition), or this information
+was not given (baseline condition). They find that markets in which
+subjects were informed about the training were less likely to produce
+bubbles and mispricing. Their conclusion is that common knowledge
+of rationality decreases bubbles. It is likely that participants were
+trading less in the informed condition since trading volume and mispricing
+are known to be correlated (REFERENCE TO COME), but unfortunately
+Cheung et al. do not report explicitly on this. We assume that algorithmic
+traders are seen as more rational and less driven by emotion than
+humans and that mispricing and trading will therefore be less when
+subjects know that they are trading in a hybrid market (Hypothesis
+1). 
+
+In our experiments subjects will have an outside option to leave the
+market for one period and fix there asset and cash stack for that
+time. Lei et al. (2001) find that such an outside option decreases
+the size of bubbles (but not eliminates them completely). We interpret
+this outside option as a strong form of not-trading and assume that
+subjects in hybrid markets will prefer the outside option more often
+above trading than subjects in human-only markets (Hypothesis 2). 
+
+We want to get extra information on the subjects that chose to trade
+(more) in hybrid markets. For this purpose we will measure two traits
+of the subjects: \emph{Risk preference} and \emph{overconfidence}.
+The general finding is that a low risk preference in markets leads
+to smaller bubbles and less trade. Robin et al. (2012) and Fellner
+and Maciejovsky (2007) tested this experimentally in SSW markets and
+used the Holt and Laury (2002) procedure to measure risk aversion.
+Keller and Siergist (2006) did a mail survey and found that financial
+risk tolerance is a predictor for the willingness to engage in asset
+markets. We expect to reproduce these findings in our markets (Hypothesis
+3a) and furthermore, we expect that the percentage of trade done by
+risk averse subjects is even smaller in hybrid markets than in human-only
+markets (Hypothesis 3b).
+
+Odean (1999) assumes that overconfidence of traders the reason that
+there is more trade than one would expect if all traders were rational.
+Michailowa (2010; 2011), Fellner and Krügel (2012a), and Oechssler
+et al. (2011) find that the size of bubbles and trading activity in
+SSW markets are strongly correlated with overconfidence. However,
+other authors find no or only very weak correlations with overconfidence
+(e.g. Glaser and Weber, 2007; Biais et al., 2005). It seems that the
+operationalization of the (not precisely defined) term \textquotedblleft{}overconfidence\textquotedblright{}
+matters. Moore and Healy (2008) and Hilton et al. (2011) describe
+different operationalizations of overconfidence. Fellner and Krügel
+(2012b) point out that well established measures of overconfidence
+from cognitive psychology \textendash{} such as the miscalibration
+measure \textendash{} are not measuring overconfidence as it is used
+in economic models. Hence, we chose to operationalize overconfidence
+specifically in the context of asset market.
+
+Buying assets for a price above the fundamental value is only rational
+if one is confident that one can sell those assets for an even higher
+price in the future. SSW and Haruvy et al. (2007) find that subjects
+form expectations of future asset prices, but are not able to predict
+turning points of prices and underestimate the violence of a price
+crash. In this line of thought one needs to be better than other traders
+with respect to two abilities: the ability to predict decisions of
+others (when will they stop buying) and better analytical/mathematical
+skills than others (what is the fundamental value of the asset). As
+found earlier, we expect that overconfidence of subjects positively
+correlates with trading activity (Hypothesis 4a). Furthermore, we
+expect that the percentage of trade done by overconfident subjects
+is larger in hybrid markets than in human-only markets. (Hypothesis
+4b).
+
+
+\section{Methods}
+
+
+\subsection{Riskpreference and overconfidence}
+
+To measure risk aversion of subjects we use the multiple price list
+method by Holt and Laury (2002). In this tasks subjects choose between
+a lottery with high variance of payoffs (Option B) and lottery with
+less variance (Option A). Table 1 gives an overview of all 10 choices
+(one per row) that subjects have to make and the respective probabilities
+of payoffs in these lotteries. At the end of the experiment one of
+the 10 choices is randomly used to compute the payoff for this task.
+In this task subjects typically switch in one row from Option A to
+Option B, different switching points represent different risk preferences.
+
+\begin{figure}
+\begin{minipage}[t]{1\columnwidth}%
+\begin{center}
+Table 1: Set of binary lotteries used for the Holt-Laury task.
+\par\end{center}%
+\end{minipage}
+
+\includegraphics[clip,scale=0.8]{\string"table 1\string".eps}
+\end{figure}
+
+
+Since there is no clear preference in the overconfidence literature
+on one task and the overconfidence construct has many dimensions,
+we chose to measure two of these dimensions with one task each. First
+we want to measure how confident a subject is that it is able to predict
+the risk preference of others. For this purpose we simply ask subjects
+after the risk measurement, what they believe was the average switching
+point of the other subjects and how confident they are that their
+estimation is correct. The second measurement refers to the subject\textquoteright{}s
+mathematical skills. Subjects do a math-quiz and have to state their
+expected rank among all participants with respect to their performance
+in the quiz and how confident they are about their assumed rank. Overconfidence
+in this context is defined as \textquotedblleft{}real rank\textquotedblright{}
+minus \textquotedblleft{}assumed rank\textquotedblright{}. Both confidence
+measurements are incentivized (for precision of the estimations and
+performance in the math task). (We take the logics test as it was
+used by Bruguier et al. (2010). One may question whether this test
+really measures arithmetic skills as they are needed during the experiment.
+However, we do not tend to really measure mathematical skill but are
+interested in how the subject compares itself w.r.t. mathematical
+skills of others in general.)
+
+
+\subsection{Baseline Market}
+
+After measurements of risk preference and overconfidence subjects
+are randomly assigned either to the baseline market- or the random
+draw condition (see next section). In the baseline condition subjects
+trade assets in a continuous double auction. Markets replicate those
+presented by SSW. As in SSW subjects will trade during 15 periods
+and dividend per period is uniform over potential outcomes 0, 8, 28,
+or 60 cent. The average dividend per round is thus 24 cent and the
+fundamental value of an asset is 360 at beginning of the market simulation
+and will decrease by 24 after each period. Every subject starts in
+period 1 with a stack of 4 assets and 720 cent in cash, which they
+can use to buy assets that are offered on the market. Trading on the
+market is anonymized. Each period lasts 3 minutes, so that the entire
+market simulation takes 45 minutes. 
+
+After the simulation subjects in this condition are finally asked
+to write down 3 adjectives that they associate with computerized trading
+in real world asset markets. These adjectives will be used in the
+Random-Draw condition. We use the Z-Tree platform (Fischbacher, 2007)
+for all market simulations, measurements, and questionnaires.
+
+
+\subsection{Random Draw}
+
+As suggested by the name this condition starts with a random draw
+about which subjects are informed. With a 50\% chance subjects will
+participate in a market where algorithmic traders are active. We will
+refer to this as the random-draw AT (RAT) condition. With a 50\% chance
+subjects participate in a market that is identical to the baseline
+market. This will be called random-draw human (RH) condition. Subjects
+are not informed on the result of the random draw. In all other aspects
+RAT and RH are identical to baseline markets. RH and baseline markets
+thus only differ with respect to the believe of subjects that there
+could be AT in the market. (In the result section we will compare
+RAT with baseline markets to study the effect that the believe that
+AT is in the market has, keeping all other variables constant.)
+
+In RAT and RH subjects get information on the algorithmic traders
+they may interact with. Giving this information comes as a double-edged
+sword. On the one hand, it is crucial to keep experimental control
+about the believes of subjects. On the other hand, we do not want
+to manipulate the believes of subjects in such a way that we induce
+an experimental demand that subjects behave the way we expect them
+to in our hypotheses. We therefore chose to collect and aggregate
+the believes of subjects in the baseline condition and present them
+to subjects in RAT and RH as the way that AT is implemented in the
+markets they will trade in. Assuming that the believes about AT in
+the baseline and RAT and RH are the same, we do not change their believes,
+but still control them.
+
+
+\subsection{Algorithmic Traders }
+
+to come
+
+
+\subsection{Outside Option}
+
+In all markets subjects will have an outside option that they can
+chose every period instead of participating in the asset market. This
+option is offered before the start of a period. If chosen the screen
+will turn black for the duration of the period. We interpret this
+a choice for this option as the strong form of not-trading.
+
+
+\subsection{Subjects}
+
+Markets with males are known to produce bigger bubbles (Reference).
+Furthermore, women are more risk averse (Reference). We therefore
+matched groups with respect to gender of market participants. Candidates
+that have participated in experimental asset markets were excluded
+from the experiment.
+
+
+\section{Results}
+
+And what came out \ldots{}
+
+
+\subsection{Descriptives}
+
+This \ldots{}
+
+
+\subsection{Analysis}
+
+\ldots{} and that.
+
+
+\section{Discussion}
+
+\bibliographystyle{plainnat}
+\nocite{*}
+\bibliography{hybridMarkets}
+
+\end{document}

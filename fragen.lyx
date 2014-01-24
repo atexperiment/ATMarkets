@@ -1,0 +1,291 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+bezieht sich auf 
+\begin_inset Quotes gld
+\end_inset
+
+Design.tex
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Unabhängigkeit der Observationen
+\end_layout
+
+\begin_layout Standard
+Kann ich statistische Analysen machen in denen N=Subjekte ist oder ist mein
+ N=Anzahl der Märkte? Da die Subjekte ja über die Märkte miteinander interagiere
+n sind sie keine unabhängigen Observationen mehr, richtig? Bin ich überpenibel?
+ Wenn nicht müsste ich als abhängige Variable also die Anzahl Trades während
+ einer gesamten Simulation nehmen und als unabhängige Variable u.a.
+ die durchschnittliche risk preference in einem Markt.
+ Damit wäre N sehr klein.
+\end_layout
+
+\begin_layout Subsection
+Baseline condition
+\end_layout
+
+\begin_layout Standard
+Können wir die Anzahl Runden verringern? (um Geld zu sparen und zu verhindern
+ das Subjekte sich nicht mehr konzentrieren können) In den meisten Experimenten
+ werden 15 Runden genommen.
+ Vielleicht ist das ja eine gute Zahl wenn es um Blasenbildung geht, aber
+ an Blasen bin ich ja eigentlich garnicht interessiert.
+ Auf der anderen Seite korrelieren Blasenbildung und Tradingactivity stark
+ und es erhöht die Vergleichbarkeit unserer Daten.
+ Hast du eine Meinung hierzu?
+\end_layout
+
+\begin_layout Subsection
+Experimental condition
+\end_layout
+
+\begin_layout Standard
+Ich bin nicht interessiert an den Subjekten/Märkten in denen algorthmic
+ trading da sein könnte und es tatsächlich auch ist.
+ Ist es sinnvoll für diese Gruppe einfach die Anzahl der Runden auf ein
+ Minimum zu kürzen (so das wir weniger an sie zahlen müssen)? Der einzige
+ Grund der mir einfällt warum es nicht gut sein könnte ist wegen der Kontrollfra
+ge am Ende (
+\begin_inset Quotes gld
+\end_inset
+
+glauben Sie dass Sie in einem Markt mit AT gehandelt haben
+\begin_inset Quotes grd
+\end_inset
+
+).
+ Aber die Kontrollfrage ist ja nicht wirklich wichtig.
+\end_layout
+
+\begin_layout Subsection
+Algorithmic Traders
+\end_layout
+
+\begin_layout Standard
+Was hältst du von der ganzen Prozedur wie ich Subjekten sage, wie sie sich
+ den AT vorstellen sollen? Ich versuche damit beides; dafür sorgen dass
+ alle die selben Belives haben, ohne dabei ihre durchschnittlichen Belives
+ zu verändern.
+\end_layout
+
+\begin_layout Standard
+Ich versuche außerdem zu verhindern dass Subjekte direkt erkennen, dass
+ Sie in einem Markt mit AT sind.
+ Deswegen der 2.
+ Absatz.
+ Wenn der Computer unmittelbar auf ein Gebot reagiert ist das sehr auffällig.
+ Findest du die Idee mit der Latenz ok, oder lasse ich damit eine essentielle
+ Eigenschaft von AT weg (nämlich ihre Geschwindigkeit)?
+\end_layout
+
+\begin_layout Subsection
+Overconfidence
+\end_layout
+
+\begin_layout Standard
+Was denkst du über die Overconfidence Measures? Vor allem bei Punkt 2 bin
+ ich mir unsicher.
+ Es ist üblich General Knowledge Questions (GKQs) zu nehmen, aber ich bin
+ der Meinung das die Logik-Rätsel eher die benötigten Fähigkeiten in einem
+ Asset Market messen, dementsprechend auch diese spezielle Overconfidence
+ relevanter ist als bei GKQs.
+ Die Idee ist, dass beide Messungen messen was relevant ist um gewinnbringend
+ in Aktienmärkten zu handeln: Andere Menschen einschätzen können und logisch/mat
+hematisch richtig denken.
+\end_layout
+
+\begin_layout Subsection
+Outside option
+\end_layout
+
+\begin_layout Standard
+Ich habe die Option jetzt so simpel wie möglich gehalten.
+ Dein Vorschlag in einer früheren Mail war die Leute Handeln zu lassen ohne,
+ dass dies Einfluss auf ihre Entlohnung hat.
+ Dafür müsste ich einen zweiten (nicht-entlohnungsrelevanten) Markt implementier
+en.
+ Da sich Subjekte auch pro Runde entscheiden können würden Sie Erfahrungen
+ aus dem 1.
+ Markt in den 2.
+ Markt mitnehmen.
+ Das könnte komische Effekte zur Folge haben.
+ Einverstanden mit meiner Wahl?
+\end_layout
+
+\begin_layout Subsection
+Payment
+\end_layout
+
+\begin_layout Standard
+Dieser Abschnitt ist nur provisorisch.
+ Ich weiß nicht genau wie ich die Leute entlohnen soll.
+ Insgesamt habe ich 5 Teile im Experiment die ich alle incentivieren möchte
+ (Holt and Laury, Overconfidence 1 und 2, die Rätsel und die Marktsimulation).
+ Diese Teile sind in ihrer Dauer sehr unterschiedlich, daher erscheint es
+ mir nicht gut einen Teil zufällig zur Entlohnung auszuwählen.
+ Auf der anderen Seite möchte ich aber auch keinen Endowmenteffekt haben.
+ Die perfekte Lösung wird es nicht geben, aber was ist dein Rat?
+\end_layout
+
+\begin_layout Standard
+Die Entlohnung sollte durchschnittlich 10 Euro pro Stunde sein (+ 2.5 Euro
+ Show-up), richtig?
+\end_layout
+
+\begin_layout Part
+bezieht sich auf 
+\begin_inset Quotes gld
+\end_inset
+
+Instruktionen baseline market.tex
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Generell habe ich mich für die Instruktionen an Instruktionen von anderen
+ Orientiert.
+ Es ist jedoch das erste Mal das ich Instruktionen verfasst habe.
+ Wenn du Zeit dazu hast wäre es nett wenn du Sie mal durchgehst.
+ (Ich habe sie auch schon an meiner Freundin getestet).
+\end_layout
+
+\begin_layout Standard
+Gibt es während der Verlesung der Instruktionen die Möglichkeit mit einem
+ Beamer die GUI für die Marktsimulation an die Wand zu Projezieren? Ich
+ denke das ein Zeigen zusätzlich zum Lesen das Verständnis der komplizierten
+ GUI vereinfachen würde.
+ Das Selbe gilt für die Tabelle am Ende der Instruktionen.
+\end_layout
+
+\begin_layout Subsection
+ECU
+\end_layout
+
+\begin_layout Standard
+Ist es möglich statt in ECU direkt in Cent zu rechnen? Ich verstehe dass
+ man normalerweise ECU benutzt um unabhängig von Land und Zeit die selben
+ Zahlen in einem Experiment zu benutzen.
+ In diesem Fall ist es aber möglich die gängigen Zahlen bei den Dividenden
+ und dem Geldkapital zu benutzen und zugleich in der Währung zu rechnen
+ die den Subjekten vertraut sind.
+ Wenn man in Cent anstatt ECU rechnet sollten Subjekte in der Marktsimulation
+ durchschnittlich 22 Euro verdienen.
+ Das gesammte Experiment wird wahrscheinlich 2 Stunden dauern.
+ Gibt es ein Argument dass die zusätzliche Verwirrung durch ECU rechtfertigt?
+\end_layout
+
+\begin_layout Subsection
+Nichtteilnahme
+\end_layout
+
+\begin_layout Standard
+Ich habe versucht dies so neutral wie möglich zu formulieren.
+ Ist mir das gelungen? Gibt es Stellen die du anders formulieren würdest?
+\end_layout
+
+\begin_layout Part
+bezieht sich auf 
+\begin_inset Quotes gld
+\end_inset
+
+baseline market.ztt
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Rätsel
+\end_layout
+
+\begin_layout Standard
+Zum Lesen und Beantworten der Rätsel bleiben Subjekten 30 Sekunden.
+ Diese Zeit habe ich übernommen von Bruguier et al.
+ (2010) (Quelle befindet sich in hybridMarkets.bib).
+ Meine Freundin war sehr frustriert und gestresst über die kurze Zeit.
+ Ich möchte mit den Rätseln aber keine Emotionen induzieren.
+ Kann ich die Zeit einfach verdoppeln?
+\end_layout
+
+\begin_layout Subsection
+Verständnisfragen
+\end_layout
+
+\begin_layout Standard
+Ich nehme an ich sollte (am Ende oder vor Beginn?) der Marktsimulation kontrolli
+eren ob meine Subjekte die Instruktionen verstanden haben.
+ Gibt es dafür Richtlinien oder Vorbilder die du mir schicken könntest?
+\end_layout
+
+\end_body
+\end_document

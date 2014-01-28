@@ -2,31 +2,8 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass apa
-\begin_preamble
-%% uncomment the following line to get this information
-% below the tile
-%\note{Draft of \today}
-
-%% Some information on the journal. This will be
-%% printed on the headline of the first page
-%% Just uncomment wir a '%' if you don't want this
-% Journal name
-\journal{The Test Journal}
-% volume, number, pages
-\volume{Vol. 0 (2007), pp.~1--22}
-% copyright notice
-\ccoppy{\textcopyright\ The Author}
-% Serial number or other reference
-\copnum{ISSN XXX-XXXX-XXXX}
-
-%% The usual ...
-\acknowledgements{Author notes, acknowledgements, contact information go here \ldots}
-
-\note{This is a note}
-\end_preamble
-\options doc
-\use_default_options false
+\textclass article
+\use_default_options true
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -48,20 +25,19 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
 \use_amsmath 1
-\use_esint 0
+\use_esint 1
 \use_mhchem 1
 \use_mathdots 1
-\cite_engine natbib_authoryear
+\cite_engine basic
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\use_refstyle 0
+\use_refstyle 1
 \index Index
 \shortcut idx
 \color #008000
@@ -84,25 +60,12 @@
 \begin_body
 
 \begin_layout Title
-Changes in human behavior under the presence of algorithmic traders in experimen
-tal asset markets
-\end_layout
-
-\begin_layout RightHeader
-Presence of algorithmic traders in asset markets
-\end_layout
-
-\begin_layout Author
-Mike Daniel Farjam
-\end_layout
-
-\begin_layout Affiliation
-Friedrich Schiller University Jena, International Max Planck Research School
- on Adapting Behavior in a Fundamentally Uncertain World, Germany
+The effect of algorithmic trading in asset markets on human willingness
+ to trade
 \end_layout
 
 \begin_layout Abstract
-bladibla
+bladibla 
 \end_layout
 
 \begin_layout Standard
@@ -116,13 +79,15 @@ In 1988, Smith, Suchanek, and Williams (SSW) published work in experimental
  is known to subjects.
  Thus subjects (theoretically) know the fundamental value of an asset in
  these markets.
- SSW find that asset prices in the experimental markets follow a “bubble
- and crash” pattern that is close to speculative bubbles in real world asset
- markets.
+ SSW find that asset prices in the experimental markets follow a 
+\begin_inset Quotes grd
+\end_inset
+
+bubble and crash” pattern that is close to speculative bubbles in real world
+ asset markets.
  Many modifications of the SSW design have been used to understand the reasons
  for market bubbles and design markets that are less probable to produce
  such bubbles (for a full survey see Palan (2013)).
- 
 \end_layout
 
 \begin_layout Standard
@@ -139,7 +104,6 @@ ng the asset price on the market, but also including fully automated strategic
  to sell and buy on the markets (Kirilenko and Lo, 2013).
  It is estimated that AT is responsible for up to 70% of the total trading
  volume in major European and US equity exchanges (De Luca et al., 2011).
- 
 \end_layout
 
 \begin_layout Standard
@@ -150,9 +114,12 @@ l economists prefer to study (human-only) markets of the 1980s to propose
  The major part of these studies focuses on the computer side of hybrid
  markets.
  Das et al.
- (2001) and De Luca and Cliff (2011) did “horse race” studies in which they
- compare the performance of different kinds of algorithms with the performance
- of humans.
+ (2001) and De Luca and Cliff (2011) did 
+\begin_inset Quotes grd
+\end_inset
+
+horse race” studies in which they compare the performance of different kinds
+ of algorithms with the performance of humans.
  Other experiments try to identify properties in which hybrid markets differ
  from human-only markets.
  Walsh et al.
@@ -163,7 +130,6 @@ l economists prefer to study (human-only) markets of the 1980s to propose
  Menkveld (2011) find that liquidity increased on the market as the use
  of AT increased.
  Furthermore, they find an increase in speed of price discovery.
- 
 \end_layout
 
 \begin_layout Standard
@@ -172,7 +138,6 @@ All of these studies ignore the possibility that differences between human-only
  compared to human traders, but may also be a result of the different expectatio
 ns that humans have in hybrid markets with respect to participants in the
  market they may interact with (namely computers).
- 
 \end_layout
 
 \begin_layout Standard
@@ -188,16 +153,18 @@ In this paper, we study empirically the changes in human market behavior
  They find no significant difference in trading volume between the two markets
  (although the trend is that there is less trading when subjects are informed
  about the presence of AT).
- 
 \end_layout
 
 \begin_layout Standard
-Unfortunately Grossklags and Schmidts’ paper has, from an economic point
- of view, some weaknesses that we want to overcome.
+Unfortunately Grossklags and Schmidts
+\begin_inset Quotes ers
+\end_inset
+
+ paper has, from an economic point of view, some weaknesses that we want
+ to overcome.
  They do not give all payoff relevant information to subjects in the no-informat
 ion condition (namely the presence of AT) and they do not control for the
  believes that subjects may have about AT.
- 
 \end_layout
 
 \begin_layout Standard
@@ -221,7 +188,6 @@ overconfidence
  literature.
  In the method section we describe the concrete design we chose to test
  the hypotheses.
- 
 \end_layout
 
 \begin_layout Section
@@ -246,7 +212,6 @@ Cheung et al.
  by emotion than humans and that mispricing and trading will therefore be
  less when subjects know that they are trading in a hybrid market (Hypothesis
  1).
- 
 \end_layout
 
 \begin_layout Standard
@@ -258,7 +223,6 @@ In our experiments subjects will have an outside option to leave the market
  We interpret this outside option as a strong form of not-trading and assume
  that subjects in hybrid markets will prefer the outside option more often
  above trading than subjects in human-only markets (Hypothesis 2).
- 
 \end_layout
 
 \begin_layout Standard
@@ -290,17 +254,22 @@ is 3b).
 \begin_layout Standard
 Odean (1999) assumes that overconfidence of traders the reason that there
  is more trade than one would expect if all traders were rational.
- Michailowa (2010; 2011), Fellner and Krügel (2012a), and Oechssler et al.
+ Michailowa (2010; 2011), Fellner and Krï¿œgel (2012a), and Oechssler et
+ al.
  (2011) find that the size of bubbles and trading activity in SSW markets
  are strongly correlated with overconfidence.
  However, other authors find no or only very weak correlations with overconfiden
 ce (e.g.
  Glaser and Weber, 2007; Biais et al., 2005).
  It seems that the operationalization of the (not precisely defined) term
- “overconfidence” matters.
+ 
+\begin_inset Quotes grd
+\end_inset
+
+overconfidence” matters.
  Moore and Healy (2008) and Hilton et al.
  (2011) describe different operationalizations of overconfidence.
- Fellner and Krügel (2012b) point out that well established measures of
+ Fellner and Krï¿œgel (2012b) point out that well established measures of
  overconfidence from cognitive psychology – such as the miscalibration measure
  – are not measuring overconfidence as it is used in economic models.
  Hence, we chose to operationalize overconfidence specifically in the context
@@ -339,58 +308,8 @@ To measure risk aversion of subjects we use the multiple price list method
  by Holt and Laury (2002).
  In this tasks subjects choose between a lottery with high variance of payoffs
  (Option B) and lottery with less variance (Option A).
- Table 1 gives an overview of all 10 choices (one per row) that subjects
- have to make and the respective probabilities of payoffs in these lotteries.
- At the end of the experiment one of the 10 choices is randomly used to
- compute the payoff for this task.
  In this task subjects typically switch in one row from Option A to Option
  B, different switching points represent different risk preferences.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\align center
-Table 1: Set of binary lotteries used for the Holt-Laury task.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename table 1.jpg
-	scale 80
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -402,12 +321,23 @@ Since there is no clear preference in the overconfidence literature on one
  For this purpose we simply ask subjects after the risk measurement, what
  they believe was the average switching point of the other subjects and
  how confident they are that their estimation is correct.
- The second measurement refers to the subject’s mathematical skills.
+ The second measurement refers to the subject
+\begin_inset Quotes ers
+\end_inset
+
+s mathematical skills.
  Subjects do a math-quiz and have to state their expected rank among all
  participants with respect to their performance in the quiz and how confident
  they are about their assumed rank.
- Overconfidence in this context is defined as “real rank” minus “assumed
- rank”.
+ Overconfidence in this context is defined as 
+\begin_inset Quotes grd
+\end_inset
+
+real rank” minus 
+\begin_inset Quotes grd
+\end_inset
+
+assumed rank”.
  Both confidence measurements are incentivized (for precision of the estimations
  and performance in the math task).
  (We take the logics test as it was used by Bruguier et al.
@@ -440,7 +370,6 @@ After measurements of risk preference and overconfidence subjects are randomly
  Trading on the market is anonymized.
  Each period lasts 3 minutes, so that the entire market simulation takes
  45 minutes.
- 
 \end_layout
 
 \begin_layout Standard
@@ -554,6 +483,7 @@ Discussion
 \end_layout
 
 \begin_layout Standard
+  
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintAll"
